@@ -18,7 +18,7 @@ int main(int argc, char** argv)
 			exit(1);
 		}
 
-		directory_fd = open( argv[2] , O_WRONLY | O_CREAT , 0644 );
+		directory_fd = open( argv[2] , O_WRONLY | O_CREAT | O_TRUNC , 0644 );
                 
 		if( directory_fd == -1 )
 		{
